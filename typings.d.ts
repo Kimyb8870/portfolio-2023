@@ -7,7 +7,7 @@ type Base = {
 };
 
 interface Post extends Base {
-  author: Author;
+  developer: Developer;
   body: Block[];
   categories: Categories[];
   mainImage: Image;
@@ -16,7 +16,7 @@ interface Post extends Base {
   description: string;
 }
 
-interface Author extends Base {
+interface Developer extends Base {
   bio: Block[];
   image: Image;
   name: string;
