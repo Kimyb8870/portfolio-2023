@@ -8,7 +8,7 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 const query = groq`
   *[_type=="post"]{
     ...,
-    author->,
+    developer->,
     categories[]->
   } | order(_createdAt desc)
 `;

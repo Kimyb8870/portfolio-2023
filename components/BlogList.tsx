@@ -12,7 +12,7 @@ const BlogList = ({ posts }: Props) => {
     <div>
       <hr className="border mb-10" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
+      <div className="grid grid-cols-1 px-10 gap-10 gap-y-16 pb-24">
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`${post.slug}`}>
             <div className="group flex flex-col cursor-pinter">
@@ -20,7 +20,7 @@ const BlogList = ({ posts }: Props) => {
                 <Image
                   className="object-cover object-left lg:object-center"
                   src={urlFor(post.mainImage).url()}
-                  alt={post.author.name}
+                  alt={post.developer.name}
                   fill
                 />
                 <div className="flex absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-5 justify-between">
